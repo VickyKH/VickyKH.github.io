@@ -26,6 +26,7 @@
   .logo {
     margin-right: auto;
     margin-top: auto;
+    margin-bottom: auto;
   }
 
   .logo img{
@@ -40,6 +41,10 @@
   .menu-links li, .header div{
     display: inline-block;
     padding: 0.5em;
+  }
+
+  .menu-links ul {
+    margin: 0;
   }
 
   .about .description {
@@ -69,6 +74,7 @@
     background-color: #32F0C3;
     border-radius: 50%;
    transition: background-color 1s ease-out;
+   align: right;
   }
 
   .right:after {
@@ -105,9 +111,23 @@
     height: 200px;
   }
 
-  .align-right {
-    align: right;
+  .work .description {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    padding-right: 0;
   }
+
+  .description h2 {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .description p {
+    font-size: 0.8em;
+  }
+
 
   /* Project */
 .project-intro h1 {
@@ -146,6 +166,8 @@
   .column .col-3 {
     width: 33.33%;
   }
+
+
 
 
   /* Extra small devices (phones, 600px and down) */
