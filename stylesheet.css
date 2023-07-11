@@ -21,6 +21,7 @@
 
   .container {
     width: 75%;
+    margin-bottom: 2em;
   }
 
   .logo {
@@ -46,6 +47,8 @@
   .menu-links ul {
     margin: 0;
   }
+
+
 
   .about .description {
     width: 50%;
@@ -97,9 +100,10 @@
   }
 
   #intro-image {
-    height: 100px;
+    height: 6em;
     width: 50%;
     display: inline-block;
+    margin-right: 2em;
   }
 
   .image-round-box {
@@ -118,6 +122,7 @@
     width: 100%;
     padding-right: 0;
   }
+
 
   .description h2 {
     font-size: 1em;
