@@ -1,7 +1,7 @@
 
   body {
     font-family: 'Rubik', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
   }
 
   body b {
@@ -20,7 +20,7 @@
   }
 
   .container {
-    width: 75%;
+    width: 55%;
     margin-bottom: 2em;
   }
 
@@ -95,8 +95,15 @@
     transition: margin-left 0.5s ease-out;
     }
 
-  .intro {
+
+  #intro {
     display: flex;
+    height: 90vh;
+  }
+
+  #intro .description {
+    font-size: 1.5em;
+    width: 50%;
   }
 
   #intro-image {
@@ -111,8 +118,37 @@
     background-color: #AAA;
   }
 
+  .image-full {
+    background-color: #AAA;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+  }
+
   div.work-image {
-    height: 200px;
+    height: 500px;
+  }
+
+/* https://blog.hubspot.com/website/video-background-css */
+
+  div.work-video {
+    height: 1000px;
+    overflow: hidden;
+  }
+
+  .work-video video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
   }
 
   .work .description {
@@ -121,6 +157,11 @@
     padding-bottom: 1em;
     width: 100%;
     padding-right: 0;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    font-weight: 600;
   }
 
 
@@ -172,6 +213,28 @@
     width: 33.33%;
   }
 
+  .column .col-2 {
+    width: 50%;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  button.pill {
+    background-color: #EFF4FF;
+    border: none;
+    color: #2557D6;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 13px;
+    margin-left: -1px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+  }
+
 
 
 
@@ -189,11 +252,21 @@
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     body {
-      font-size: 32px;
+      font-size: 28px;
+    }
+
+    .container {
+      width: 75%;
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {...}
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 55%;
+    }
+
+  }
+
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {...}
