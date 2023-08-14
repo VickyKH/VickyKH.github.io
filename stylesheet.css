@@ -49,27 +49,60 @@
   }
 
 
+.about {
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
   .about .description {
     width: 50%;
+
   }
 
- a {
-  display: inline-block;
-  border-radius: 50%;
+
+  a.workBox {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
-  a:hover .left, a:hover .top, a:hover .bottom, a:hover .right{
-    background-color: #248FDD;
+  a.workBox .image-round-box {
+    overflow: hidden;
+    transition: box-shadow 1s ease-out;
   }
 
-  a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:after {
+  a.workBox:hover .image-round-box {
+    -webkit-box-shadow:0px 0px 55px 0.5rem rgba(110,110,110,0.3);
+    -moz-box-shadow: 0px 0px 55px 0.5rem rgba(110,110,110,0.3);
+    box-shadow: 0px 0px 55px 0.5rem rgba(110,110,110,0.3);
+    /* animation: pulse 1s ease-in-out infinite; */
+  }
+
+
+  a.workBox img {
+    content: cover;
+    transition: transform 0.5s ease-out;
+  }
+
+  a.workBox:hover img {
+    transform: scale(1.05);
+  }
+
+  a.workBox:hover .right {
+    background-color:;
+  }
+
+  a.workBox:hover .right:after {
     border-top: 4px solid #FFF;
     border-right: 4px solid #FFF;
     margin-left: 0.7em;
   }
 
-  .right {
+  a.workBox .right {
+    background-color: #248FDD;
     display: inline-block;
     width: 2em;
     height: 2em;
@@ -77,10 +110,10 @@
     background-color: #32F0C3;
     border-radius: 50%;
    transition: background-color 1s ease-out;
-   align: right;
+   float: right;
   }
 
-  .right:after {
+  a.workBox .right:after {
     content: '';
     display: inline-block;
     margin-top: 0.6em;
@@ -98,7 +131,7 @@
 
   #intro {
     display: flex;
-    height: 90vh;
+    height: 70vh;
   }
 
   #intro .description {
@@ -153,6 +186,7 @@
 
   .work .description {
     display: flex;
+    justify-content: space-between;
     padding-top: 1em;
     padding-bottom: 1em;
     width: 100%;
@@ -183,12 +217,18 @@
   padding-bottom: 1rem;
 }
 
-.work-image {
+.imgBox_Fill img, .imgBox_Fit img {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.work-image img {
-  width: 100%;
+.work-image img, .imgBox_Fill img {
+  object-fit: cover;
+}
+
+.imgBox_Fit img {
+  object-fit: contain;
 }
 
 .work-details {
