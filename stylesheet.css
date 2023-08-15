@@ -20,7 +20,7 @@
   }
 
   .container {
-    width: 55%;
+    width: 70%;
     margin-bottom: 2em;
   }
 
@@ -55,11 +55,10 @@
   margin-bottom: 3rem;
 }
 
-  .about .description {
-    width: 50%;
 
-  }
-
+p.sub {
+  font-size: 5em;
+}
 
   a.workBox {
     display: block;
@@ -136,7 +135,12 @@
 
   #intro .description {
     font-size: 1.5em;
-    width: 50%;
+    width: 13em;
+  }
+
+  #intro .description p.sub {
+    font-size: 0.5em;
+    font-weight: 100;
   }
 
   #intro-image {
@@ -296,13 +300,13 @@
     }
 
     .container {
-      width: 75%;
+      width: 80%;
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     .container {
-      width: 55%;
+      width: 70%;
     }
 
   }
